@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  Katalogue
 {% endblock %}
 
 {% block content %}
@@ -11,50 +11,101 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        Katalogue
+        {# <span class="heading-secondary">{{releaseVersion}}</span> #}
+      </h1>{#{{releaseVersion | log }}#}
+      <p class="lede">
+        blah blah blah
       </p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+<div class="grid-row">
+    <div class="column-one-half">
+          <div class="data">
+        <span class="data-item bold-xxlarge">12</span>
+        <span class="data-item bold-xsmall">Katas completed so far</span>
+    </div>
+    </div>
+    <div class="column-one-half">
+          <div class="data">
+        <span class="data-item bold-xxlarge">2</span>
+        <span class="data-item bold-xsmall">Solutions to review</span>
+    </div>
+    </div>
+</div>
 
-      <h2 class="heading-medium">About this page</h2>
+			<h2 class="heading-medium">Available Katas</h2>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
-
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
+			{# <ul class="list list-numbered">
 				<li>
 					<a href="https://govuk-elements.herokuapp.com/snippets/">
 						Guide to GOV.UK Elements
 					</a>
 				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
+            </ul> #}
 
+        <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">1. </span>
+            Katas for beginners
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="divisible-completed">
+                Divisible
+              </a>
+              <strong class="task-completed" id="divisible-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="repeat-string-completed">
+                Repeat String
+              </a>
+              <strong class="task-completed" id="repeat-string-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="removing-spaces-completed">
+                Removing Spaces
+              </a>
+              {# <strong class="task-completed" id="removing-spaces-completed">Completed</strong> #}
+            </li>
+          </ul>
+        </li>
+        </ol>
+
+
+        <ol class="task-list">
+        <li>
+          <h2 class="task-list-section">
+            <span class="task-list-section-number">2. </span>
+            Katas for thos who have completed 'beginners'
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="heads-completed">
+                Heads and legs
+              </a>
+              <strong class="task-completed" id="heads-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="exam-completed">
+                Check exam results
+              </a>
+              <strong class="task-completed" id="exam-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+              <a class="task-name" href="#" aria-describedby="nth-completed">
+                Nth Smallest
+              </a>
+              {# <strong class="task-completed" id="removing-spaces-completed">Completed</strong> #}
+            </li>
+          </ul>
+        </li>
+        </ol>
+
+    </div>
+    <div class="column-one-third">
+        <h3 class="heading-small">Add Kata</h2>
+        <a href="#" class="button" role="button">Add Kata</a>
     </div>
   </div>
 </main>
