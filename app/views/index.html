@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Katalogue
+  Digital training
 {% endblock %}
 
 {% block content %}
@@ -11,15 +11,30 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        Katalogue
+        CodeKatalog
         {# <span class="heading-secondary">{{releaseVersion}}</span> #}
-      </h1>{#{{releaseVersion | log }}#}
-      <p class="lede">
-        blah blah blah
-      </p>
+      </h1>{{releaseVersion | log }}
 
 <div class="grid-row">
+    <div class="column-one-half cards">
+    <div class="card">
+        <h2 class="heading-small">Browse the Katalog</h2>
+        <p>Find katas that will develop your knowledge</p>
+        <a href="#" role="button">Browse katas</a>
+    </div>
+    </div>
+
     <div class="column-one-half">
+    <div class="card">
+        <h2 class="heading-small">Create a kata for the Katalog</h2>
+        <p>Contribute a kata</p>
+        <a href="#" role="button">Create a new kata</a>
+        </div>
+    </div>
+</div>
+
+{# <div class="grid-row"> #}
+    {# <div class="column-one-half">
           <div class="data">
         <span class="data-item bold-xxlarge">12</span>
         <span class="data-item bold-xsmall">Katas completed so far</span>
@@ -30,82 +45,9 @@
         <span class="data-item bold-xxlarge">2</span>
         <span class="data-item bold-xsmall">Solutions to review</span>
     </div>
-    </div>
-</div>
+    </div> #}
+{# </div> #}
 
-			<h2 class="heading-medium">Available Katas</h2>
-
-			{# <ul class="list list-numbered">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-            </ul> #}
-
-        <ol class="task-list">
-        <li>
-          <h2 class="task-list-section">
-            <span class="task-list-section-number">1. </span>
-            Katas for beginners
-          </h2>
-          <ul class="task-list-items">
-            <li class="task-list-item">
-              <a class="task-name" href="#" aria-describedby="divisible-completed">
-                Divisible
-              </a>
-              <strong class="task-completed" id="divisible-completed">Completed</strong>
-            </li>
-            <li class="task-list-item">
-              <a class="task-name" href="#" aria-describedby="repeat-string-completed">
-                Repeat String
-              </a>
-              <strong class="task-completed" id="repeat-string-completed">Completed</strong>
-            </li>
-            <li class="task-list-item">
-              <a class="task-name" href="#" aria-describedby="removing-spaces-completed">
-                Removing Spaces
-              </a>
-              {# <strong class="task-completed" id="removing-spaces-completed">Completed</strong> #}
-            </li>
-          </ul>
-        </li>
-        </ol>
-
-
-        <ol class="task-list">
-        <li>
-          <h2 class="task-list-section">
-            <span class="task-list-section-number">2. </span>
-            Katas for thos who have completed 'beginners'
-          </h2>
-          <ul class="task-list-items">
-            <li class="task-list-item">
-              <a class="task-name" href="#" aria-describedby="heads-completed">
-                Heads and legs
-              </a>
-              <strong class="task-completed" id="heads-completed">Completed</strong>
-            </li>
-            <li class="task-list-item">
-              <a class="task-name" href="#" aria-describedby="exam-completed">
-                Check exam results
-              </a>
-              <strong class="task-completed" id="exam-completed">Completed</strong>
-            </li>
-            <li class="task-list-item">
-              <a class="task-name" href="#" aria-describedby="nth-completed">
-                Nth Smallest
-              </a>
-              {# <strong class="task-completed" id="removing-spaces-completed">Completed</strong> #}
-            </li>
-          </ul>
-        </li>
-        </ol>
-
-    </div>
-    <div class="column-one-third">
-        <h3 class="heading-small">Add Kata</h2>
-        <a href="#" class="button" role="button">Add Kata</a>
     </div>
   </div>
 </main>
