@@ -28,4 +28,20 @@ $path: "/public/images/";
   }
 }
 
+.card {
+  background-color: $panel-colour;
+  margin: 0.1em;
+  padding: 0.5em 1em;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #005ea5;
+    color: white;
+  }
+
+  &:hover a {
+    color: white;
+  }
+}
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
