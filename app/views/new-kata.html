@@ -3,14 +3,38 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
-      <form class="form" action="index">
+      <form class="form" action="confirmation">
         <div class="form-group">
-          <fieldset>
-            <legend>
-              <h1 class="heading-large">New kata</h1>
-            </legend>
-          </fieldset>
+          <legend>
+            <h1 class="heading-large">Create a Level 1 kata</h1>
+          </legend>
         </div>
+
+        <div class="form-group">
+            <label class="form-label" for="kata-name">Kata name
+            </label>
+            <input class="form-control" id="kata-name" type="text" name="kata-name">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label" for="kata-brief-description">Brief description
+                <span class="form-hint">
+                    Give a short outline of the kata and what language features might be needed (limit 140 characters).
+                </span>
+            </label>
+            <input class="form-control" id="kata-brief-description" type="text" name="kata-brief-description">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="textarea">
+              Content
+              <span class="form-hint">
+                  Designed for beginners, this should include a detailed description, hints, examples and shouldn't take long to complete <a href="#">(see an example)</a>.
+              </span>
+            </label>
+            <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
+        </div>
+
         <div class="form-group">
             <input class="button" type="submit" value="Submit">
           </div>

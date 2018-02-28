@@ -1,0 +1,34 @@
+{% extends "layout.html" %} {% block page_title %} Digital training {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="govuk-box-highlight">
+        <h1 class="heading-xlarge">
+          Submission successful
+        </h1>
+        <p class="font-large">
+          Your content has been added to the Katalog
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-third">
+      <div class="form-group">
+        <a href="browse" class="button">View the Katalog</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-third">
+      <div class="form-group">
+        <a href="create">Add another kata</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
