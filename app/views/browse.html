@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Digital training
+  Katalogue
 {% endblock %}
 
 {% block content %}
@@ -13,13 +13,97 @@
       <h1 class="heading-xlarge">
         Browse katas
       </h1>{{releaseVersion | log }}
+        <ol class="task-list">
+        <li>
+          <h2 id="level1" class="task-list-section">
+            <span class="task-list-section-number"></span>
+            Level 1
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+            <span class="task-name">
+            <a href="#" aria-describedby="divisible-completed">
+                Divisible
+              </a>
+              <p>You need an understanding of definitions and mathematical operators</p>
+            </span>
+              <strong class="task-completed" id="divisible-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+            <span class="task-name">
+            <a href="#" aria-describedby="repeat-string-completed">
+                Repeat String
+              </a>
+              <p>You need an understanding of definitions and mathematical operators</p>
+            </span>
+              <strong class="task-completed" id="repeat-string-completed">Completed</strong>
+            </li>
+            <li class="task-list-item">
+            <span class="task-name">
+            <a href="#">
+                Remove Spaces
+              </a>
+              <p>You need an understanding of how to operate on Strings</p>
+            </span>
+            </li>
+          </ul>
+        </li>
+        </ol>
 
 
+        <ol class="task-list">
+        <li>
+          <h2 id="level2" class="task-list-section">
+            <span class="task-list-section-number"></span>
+            Level 2
+          </h2>
+          <ul class="task-list-items">
+            <li class="task-list-item">
+            <span class="task-name">
+            <a href="#" aria-describedby="heads-completed">
+                Heads and legs
+              </a>
+              <ul class="list list-bullet">
+                <li>You need an understanding of simultanious equations (algebra)</li>
+                <li>You need an understanding of how modulus operator works</li>
+                {# <li>Familiar with <code>Either[A, B]</code> data type</li> #}
+              </ul>
+            </span>
+            </li>
+            <li class="task-list-item">
+            <span class="task-name">
+            <a href="#" aria-describedby="exam-completed">
+                Check exam results
+              </a>
+              <p>You need an understanding of how to compare different collections</p>
+                  </span>
+            </li>
+            <li class="task-list-item">
+            <span class="task-name">
+            <a href="#">
+                Nth smallest
+              </a>
+              <ul class="list list-bullet">
+              <li>You need an understanding of how to work with collections and indices</li>
+              <li>You need an understanding of how to sort collections</li>
+              </ul>
+            </span>
+            </li>
+          </ul>
+        </li>
+        </ol>
+    </div>
+    <div class="column-one-third">
 
+  <h3 class="heading-small">Katas by level
+  </h3>
+<ol>
+<li><a href="#level1" role="button">Level 1</a></li>
+<li><a href="#level2" role="button">Level 2</a></li>
+
+</ol>
     </div>
   </div>
 </main>
 
 {% endblock %}
-
-
