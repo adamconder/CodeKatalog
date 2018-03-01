@@ -1,0 +1,49 @@
+{% extends "layout.html" %} {% block page_title %} Digital training {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form class="form" action="new-kata">
+        <div class="form-group">
+          <fieldset>
+            <legend>
+              <h1 class="heading-large">What level of kata are you creating?</h1>
+            </legend>
+            <div class="multiple-choice">
+              <input id="radio-level-1" type="radio" name="radio-group" value="Level 1">
+              <label for="radio-part-1">
+                <span class="form-label-bold">Level 1</span>
+                Designed for beginners, this should include a detailed description, hints, examples and shouldn't take long to complete
+                <a
+                  href="#">(see an example)</a>.
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-level-2" type="radio" name="radio-group" value="Level 2">
+              <label for="radio-part-2">
+                <span class="form-label-bold">Level 2</span>
+                Designed for novices, this should include a detailed description, hints, and examples but should use more complex language
+                features
+                <a href="#">(see an example)</a>.
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-level-3" type="radio" name="radio-group" value="Level 3">
+              <label for="radio-part-2">
+                <span class="form-label-bold">Level 3</span>
+                Designed for programmers who have an understanding of basic fundamentals, so will not usually require hints. This should
+                include a detailed description and examples
+                <a href="#">(see an example)</a>.
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+            <input class="button" type="submit" value="Continue">
+          </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
